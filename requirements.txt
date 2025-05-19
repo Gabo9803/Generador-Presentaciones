@@ -1,0 +1,9 @@
+Flask==2.3.2
+openai==1.3.7
+pydantic==2.4.2
+python-pptx==0.6.21
+weasyprint==60.1
+aiohttp==3.8.5
+requests==2.31.0
+python-dotenv==1.0.0
+sqlite3  # Inclòs amb Python, no cal especificar versió
