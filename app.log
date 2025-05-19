@@ -1,0 +1,83 @@
+2025-05-13 19:57:09,762 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-13 19:57:09,762 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-13 19:57:09,768 - INFO -  * Restarting with watchdog (windowsapi)
+2025-05-13 19:57:11,361 - WARNING -  * Debugger is active!
+2025-05-13 19:57:11,370 - INFO -  * Debugger PIN: 568-402-545
+2025-05-13 19:57:12,406 - INFO - 127.0.0.1 - - [13/May/2025 19:57:12] "GET / HTTP/1.1" 200 -
+2025-05-13 19:57:12,423 - INFO - 127.0.0.1 - - [13/May/2025 19:57:12] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-13 19:57:12,708 - INFO - 127.0.0.1 - - [13/May/2025 19:57:12] "GET /static/scripts.js HTTP/1.1" 200 -
+2025-05-13 19:57:21,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 19:57:21,567 - INFO - Raw outline response: {
+    "title": "Explorando GarBotGPT: Innovación en el Aprendizaje",
+    "summary": "Esta presentación examina GarBotGPT, una herramienta educativa impulsada por inteligencia artificial que transforma la manera en que los estudiantes acceden y procesan información. Se presentan sus características clave y su impacto en el aprendizaje.",
+    "outline": [
+        {"title": "¿Qué es GarBotGPT y cómo funciona?"},
+        {"title": "Ventajas del uso de GarBotGPT en la educación"},
+        {"title": "Casos de éxito y testimonios de usuarios"}
+    ]
+}
+2025-05-13 19:57:21,567 - INFO - Outline token usage: 261
+2025-05-13 19:57:29,296 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 19:57:29,607 - INFO - Raw presentation response: {
+    "title": "Explorando GarBotGPT: Innovación en el Aprendizaje",
+    "summary": "Esta presentación examina GarBotGPT, una herramienta educativa impulsada por inteligencia artificial que transforma la manera en que los estudiantes acceden y procesan información. Se presentan sus características clave y su impacto en el aprendizaje.",
+    "slides": [
+        {
+            "title": "Resumen Ejecutivo",
+            "content": "GarBotGPT es una herramienta educativa creada con inteligencia artificial que ayuda a los estudiantes a aprender de manera más efectiva. Su diseño interactivo facilita la comprensión y el acceso a la información.",
+            "speaker_notes": "En esta diapositiva, se presenta GarBotGPT como una solución innovadora para el aprendizaje.",
+            "image_description": "Gráfico de GarBotGPT mejorando el aprendizaje."
+        },
+        {
+            "title": "¿Qué es GarBotGPT y cómo funciona?",
+            "content": "GarBotGPT es un modelo de lenguaje IA que ayuda a responder preguntas y facilita la investigación. Utiliza algoritmos avanzados para ofrecer información precisa y relevante a los estudiantes.",
+            "speaker_notes": "Aquí se explica la funcionalidad de GarBotGPT y su base tecnológica.",
+            "image_description": "Esquema sobre el funcionamiento de GarBotGPT."
+        },
+        {
+            "title": "Ventajas del uso de GarBotGPT en la educación",
+            "content": "GarBotGPT proporciona respuestas rápidas, personalización del aprendizaje y acceso a información amplia. Esto ayuda a los estudiantes a dominar temas más fácilmente y mejora su nivel de comprensión.",
+            "speaker_notes": "Esta diapositiva destaca las principales ventajas educativas de GarBotGPT.",
+            "image_description": "Infografía sobre las ventajas de GarBotGPT."
+        },
+        {
+            "title": "Casos de éxito y testimonios de usuarios",
+            "content": "Estudiantes han reportado mejoras significativas en su rendimiento académico gracias a GarBotGPT. Las experiencias positivas destacan la efectividad de esta herramienta en sus estudios.",
+            "speaker_notes": "En esta sección se presentan historias y experiencias de usuarios satisfechos.",
+            "image_description": "Comentarios de estudiantes sobre GarBotGPT."
+        }
+    ],
+    "audience_questions": [
+        "¿Cómo crees que GarBotGPT puede ayudarte en tus estudios?",
+        "¿Qué otras herramientas te gustaría ver en el aprendizaje?"
+    ],
+    "quote": "La educación es el pasaporte hacia el futuro.",
+    "theme_styles": {
+        "background": "#F5F5F5",
+        "text_color": "#333333",
+        "font": "Arial, sans-serif"
+    }
+}
+2025-05-13 19:57:29,607 - INFO - Presentation token usage: 1021
+2025-05-13 19:57:39,620 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-13 19:57:49,113 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-13 19:58:09,635 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-13 19:58:21,199 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-13 19:58:22,660 - INFO - HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 403 Forbidden"
+2025-05-13 19:58:22,660 - WARNING - Moderación falló: Error code: 403 - {'error': {'message': 'Project `proj_FlYCTGMKNPxJIc8AFpEvb3bn` does not have access to model `text-moderation-007`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}. Continuando sin moderación.
+2025-05-13 19:58:22,660 - INFO - Presentación generada para el tema: GarBotGPT
+2025-05-13 19:58:22,660 - INFO - 127.0.0.1 - - [13/May/2025 19:58:22] "POST /generate HTTP/1.1" 200 -
+2025-05-15 16:54:55,559 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-15 16:54:55,567 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-15 16:54:55,583 - INFO -  * Restarting with watchdog (windowsapi)
+2025-05-15 16:54:57,238 - WARNING -  * Debugger is active!
+2025-05-15 16:54:57,247 - INFO -  * Debugger PIN: 568-402-545
+2025-05-15 16:55:09,879 - INFO - 127.0.0.1 - - [15/May/2025 16:55:09] "GET / HTTP/1.1" 200 -
+2025-05-15 16:55:10,006 - INFO - 127.0.0.1 - - [15/May/2025 16:55:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+2025-05-15 16:55:10,322 - INFO - 127.0.0.1 - - [15/May/2025 16:55:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-15 18:26:36,886 - INFO -  * Detected change in 'E:\\Generador Presentaciones\\app.py', reloading
+2025-05-15 18:26:38,138 - INFO -  * Restarting with watchdog (windowsapi)
+2025-05-15 18:26:39,404 - WARNING -  * Debugger is active!
+2025-05-15 18:26:39,417 - INFO -  * Debugger PIN: 568-402-545

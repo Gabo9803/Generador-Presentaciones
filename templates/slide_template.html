@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .slide { page-break-inside: avoid; margin-bottom: 20px; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <div class="slide">
+        <h2>Resumen Ejecutivo</h2>
+        <p>{{ summary }}</p>
+        {% if slides[0].image_url %}
+            <img src="{{ slides[0].image_url }}" alt="{{ slides[0].image_description or 'Imagen del resumen' }}">
+        {% endif %}
+    </div>
+    {% for slide in slides[1:] %}
+        <div class="slide">
+            <h2>{{ slide.title }}</h2>
+            <p>{{ slide.content }}</p>
+            <p><em>Notas del orador:</em> {{ slide.speaker_notes }}</p>
+            {% if slide.image_url %}
+                <img src="{{ slide.image_url }}" alt="{{ slide.image_description or 'Imagen de la diapositiva' }}">
+            {% endif %}
+        </div>
+    {% endfor %}
+    {% if audience_questions %}
+        <div class="slide">
+            <h2>Preguntas para la Audiencia</h2>
+            <ul>
+                {% for question in audience_questions %}
+                    <li>{{ question }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    {% if quote %}
+        <div class="slide">
+            <h2>Cita</h2>
+            <p>{{ quote }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>

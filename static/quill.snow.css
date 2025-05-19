@@ -1,0 +1,52 @@
+/* Simplified Quill Snow Theme */
+.ql-container {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+}
+.ql-editor {
+    box-sizing: border-box;
+    line-height: 1.42;
+    height: 100%;
+    outline: none;
+    overflow-y: auto;
+    padding: 12px 15px;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote {
+    margin: 0;
+    padding: 0;
+}
+.ql-toolbar.ql-snow {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 8px;
+}
+.ql-toolbar.ql-snow .ql-formats {
+    margin-right: 15px;
+}
+.ql-toolbar.ql-snow .ql-picker-label {
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    padding: 0 2px;
+}
+.ql-snow .ql-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 8px;
+}
